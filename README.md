@@ -1,6 +1,6 @@
-## Plotly-Extreme
+## PlotlyExtreme
 
-Set of wrapper functions to abstract repetitive tasks related to plotling with
+Set of wrapper functions to abstract repetitive tasks related to plotting with
 the plotly library.
 
 
