@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="plotlyextreme",
-    version="0.0.2",
+    version="0.0.3",
     author="Jonathan",
     description="Simple wrapper functions for plotly visualization package",
     long_description=long_description,
