@@ -3,7 +3,7 @@ from plotly.offline import iplot
 import plotly.graph_objs as go
 import plotly
 
-import utilities
+from plotlyextreme import utilities
 
 
 def create_big_number(title, large_number, pacing='--'):
