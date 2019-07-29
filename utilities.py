@@ -1,6 +1,4 @@
 import pandas as pd
-import plotly
-import plotly.graph_objs as go
 
 
 def warning_color_font(value):
@@ -69,7 +67,7 @@ def create_labels(df, cols):
 
 
 def produce_traces(df, button_col, buttons, segmentation_col, segments, x, y,
-                   default_visibility, color_list, labels):
+                   default_visibility, trace_func, color_list, labels):
     df[segmentation_col] = df[segmentation_col].str.lower()
     df[button_col] = df[button_col].str.lower()
     df = df.sort_values(by=[x])
@@ -84,9 +82,11 @@ def produce_traces(df, button_col, buttons, segmentation_col, segments, x, y,
             if not labels:
                 labels = [x, y]
             trace_hover_text = create_labels(button_segment_df, labels)
+            # trace_func is  a plotly function passed as an argument
+            # (e.g. plotly.graph_objs.Scatter)
             segment_dict.update(
               {
-                segment.lower(): go.Scatter(x=list(button_segment_df[x]),
+                segment.lower(): trace_func(x=list(button_segment_df[x]),
                                             y=list(button_segment_df[y]),
                                             text=trace_hover_text,
                                             hoverinfo='text',
