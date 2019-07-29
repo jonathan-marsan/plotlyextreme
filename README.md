@@ -1,10 +1,8 @@
 ## PlotlyExtreme
 
-Set of wrapper functions to abstract repetitive tasks related to plotting with
-the plotly library.
+Set of wrapper functions to abstract repetitive tasks related to plotting with the plotly library.
 
-The plotly functions are passed as arguments to limit what this package has to
-handle.
+The plotly functions are passed as arguments to limit what this package has to handle.
 
 ### Current Plots
 

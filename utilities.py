@@ -1,5 +1,5 @@
-import pandas as pd
-
+# Note: This functions won't work without pandas
+# import pandas as pd
 
 def warning_color_font(value):
     if isinstance(value, float):

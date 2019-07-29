@@ -1,4 +1,5 @@
-import pandas as pd
+# Note: This functions won't work without pandas
+# import pandas as pd
 
 from plotlyextreme import utilities
 

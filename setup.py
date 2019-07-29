@@ -13,8 +13,6 @@ setuptools.setup(
     url="https://github.com/jonathan-marsan/plotlyextreme",
     packages=setuptools.find_packages(),
     install_requires=[
-          'pandas',
-          'plotly',
       ],
     classifiers=[
         "Programming Language :: Python :: 3",
