@@ -46,6 +46,6 @@ plots.create_big_number(title='abc', large_number=123, pacing=.7,
 plots.plot_four_dimensions(df, x='abc', y='def', title='alphabet',
                            segmentation_col='ghi',    button_col='jkl',
                            buttons=['z', 'y'], default_visibility='z',
-                           trace_func=go.Scatter, render_func=iplot),
+                           trace_func=go.Scatter, render_func=iplot,
                            x_layout=go.layout.XAxis(tickformat=',d'))
 ```
